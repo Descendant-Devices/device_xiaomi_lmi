@@ -13,6 +13,9 @@
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.light@2\.0-service    u:object_r:hal_light_default_exec:s0
 /system/bin/hw/lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.lmi   u:object_r:hal_fod_lmi_exec:s0
 
+#Kernel debug
+/sys/kernel/tracing      u:object_r:debugfs_tracing_debug:s0
+
 # Kernel Modules
 /system/lib/modules(/.*)?     u:object_r:system_file:s0
 
